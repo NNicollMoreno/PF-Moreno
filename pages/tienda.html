@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/Logo.png">
     <title>Hablar Sanamentes - Tienda</title>
+    <!-- SEO -->
     <meta name="description" content="Hablar Sanamentes busca para sustentarse como proyecto el vender material POP para solventar gastos y poder continuar el proyecto">
     <meta name="keywords" content="Psicología, universidad, bienestar, estudiantes, bogota, salud mental, venta, camisetas, Hoodies">
     <!-- Link Bootstrap CSS-->
@@ -13,7 +14,7 @@
     rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
     crossorigin="anonymous">
     <!-- Link CSS -->
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
 </head>
@@ -32,22 +33,22 @@
                       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html" style="color: #8298D0;">Home</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link active" href="../pages/nosotros.html">Nosotros</a>
+                            <a class="nav-link active" href="../pages/nosotros.html" style="color: #8298D0;">Nosotros</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link active" href="../pages/informate.html">Infórmate</a>
+                            <a class="nav-link active" href="../pages/informate.html" style="color: #8298D0;">Infórmate</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link active" href="../pages/cuentanos.html">Cuéntanos</a>
+                            <a class="nav-link active" href="../pages/cuentanos.html" style="color: #8298D0;">Cuéntanos</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link active" href="../pages/ayuda.html">Ayuda</a>
+                            <a class="nav-link active" href="../pages/ayuda.html" style="color: #8298D0;">Ayuda</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link active" href="#">Tienda</a>
+                            <a class="nav-link active" href="#" style="color: #8298D0;">Tienda</a>
                           </li>
                         </ul>
                       </div>
@@ -56,12 +57,12 @@
             </div>
         </header>
         <!-- Buscador -->
-        <div class="d-flex justify-content-left align-items-left">
-            <input type="text" class="form-control form-control-sm w-25 p-2" id="Input" aria-describedby="emailHelp"
-            placeholder="Escribe aquí el tema del que quieras saber">
-            <button class="btn btn-primary" type="submit">Buscar</button>
+        <div class="Buscar-obj">
+            <input type="text" class="form-control form-control-sm w-25 p-2 busca-tiend" id="Input" aria-describedby="emailHelp"
+            placeholder="Escribe aquí el objeto que busca">
+            <button class="btn btn-primary boton-buscar" type="submit">Buscar</button>
         </div>
-        <div class="container">
+        <div class="container cont-group">
             <div class="btn-group">
                 <a href="#" class="btn btn-primary active" aria-current="page">Todos</a>
                 <a href="#" class="btn btn-primary">Camisetas</a>
@@ -70,7 +71,7 @@
         </div>
         <!-- Productos -->
         <div>
-            <h1>Productos destacados</h1>
+            <h2 class="title-prod">Productos destacados</h2>
         </div>
         <div class="container 2">
             <div class="row">
@@ -78,11 +79,11 @@
                 <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="../img/Camisetas.png" class="card-img-top" alt="Camiseta blanca">
-                        <div class="card-body">
-                          <h2 class="card-title">Camiseta holgada</h2>
-                          <p class="card-text">Algodón 100%</p>
-                          <p class="card-text">50.000 COP</p>
-                          <a href="#" class="btn btn-primary">Al carrito</a>
+                        <div class="card-body card-tien">
+                          <h2 class="card-title title-tien">Camiseta holgada</h2>
+                          <p class="card-text text-tien">Algodón 100%</p>
+                          <p class="card-text text-prec">50.000 COP</p>
+                          <a href="#" class="btn btn-primary d-flex justify-content-center align-items-center boton-compra">Al carrito</a>
                         </div>
                     </div>              
                   </div>
@@ -90,30 +91,70 @@
              <div class="col">
                 <div class="card" style="width: 18rem;">
                     <img src="../img/Bags.png" class="card-img-top" alt="Camiseta de pikacheems">
-                    <div class="card-body">
-                      <h2 class="card-title">T-shirt pikachems</h2>
-                      <p class="card-text">Algodón 100%</p>
-                      <p class="card-text">70.000 COP</p>
-                      <a href="#" class="btn btn-primary">Al carrito</a>
+                    <div class="card-body card-tien">
+                      <h2 class="card-title title-tien">T-shirt pikachems</h2>
+                      <p class="card-text text-tien">Algodón 100%</p>
+                      <p class="card-text text-prec">70.000 COP</p>
+                      <a href="#" class="btn btn-primary d-flex justify-content-center align-items-center boton-compra">Al carrito</a>
                     </div>
                 </div>              
               </div>
               <div class="col">
                 <div class="card" style="width: 18rem;">
                     <img src="../img/Busos.png" class="card-img-top" alt="Hoodie de pikacheems">
-                    <div class="card-body">
-                      <h2 class="card-title">Hoodie pikachems</h2>
-                      <p class="card-text">Algodón 100%</p>
-                      <p class="card-text">30.000 COP</p>
-                      <a href="#" class="btn btn-primary">Al carrito</a>
+                    <div class="card-body card-tien">
+                      <h2 class="card-title title-tien">Hoodie pikachems</h2>
+                      <p class="card-text text-tien">Algodón 100%</p>
+                      <p class="card-text text-prec">30.000 COP</p>
+                      <a href="#" class="btn btn-primary d-flex justify-content-center align-items-center boton-compra">Al carrito</a>
                     </div>
                 </div>              
               </div>
             </div>
         </div>
+        <!-- Footer -->
         <footer class="row bg-footer">
-            <div class="col-xl-12 col-12 d-flex justify-content-center">
-                <h3>Hablar, sanamentes 2023©</h3>
+          <div class="info-footer">
+            <div class="row">
+              <div class="col">
+              <a class="navbar-brand" href="#"><img src="../img/Logo.png" alt="Logo Hablar Sanamentes"></a>
+              <h6 class="Footer-sub">Somos un proyecto creado por tres estudiantes de Diseño Digital y Multimedia, diseñado para generar interés en la búsqueda de bienestar mental, emocional y también en la búsqueda de ayuda profesional.</h6>
+              <a class="logo_insta redes-img" href="https://www.instagram.com/hablar_sanamentes/"><img src="../img/Logo_insta.png" alt="Logo instagram"></a>
+              <a class="logo_tiktok redes-img" href="https://www.tiktok.com/@hablar.sanamentes"><img src="../img/Logo_tiktok.png" alt="Logo tik tok"></a>
+              </div>
+              <div class="col footer-vent">
+              <h5>El proyecto</h5>
+              <ul>
+                <li class="nav-footer">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-footer">
+                  <a class="nav-link active" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-footer">
+                  <a class="nav-link active" href="../pages/informate.html">Infórmate</a>
+                </li>
+                <li class="nav-footer">
+                  <a class="nav-link active" href="../pages/cuentanos.html">Cuéntanos</a>
+                </li>
+                <li class="nav-footer">
+                  <a class="nav-link active" href="../pages/ayuda.html">Ayuda</a>
+                </li>
+                <li class="nav-footer">
+                  <a class="nav-link active" href="#">Tienda</a>
+                </li>
+              </ul>
+              </div>
+              <div class="col">
+                <h5>Contacto</h5>
+                <h6 class="foo-datos">Dirección: Carrera 70a # 7a-20, Bogotá D.C, Colombia</h6>
+                <h6 class="foo-datos">Télefono: +57 315 456 12 86</h6>
+                <h6 class="foo-datos">Correo: Hablarsanamentes@gmail.com</h6>
+              </div>
+            </div>
+          </div>
+            <div class="col-xl-12 col-12 d-flex justify-content-center Final-footer">
+                <h3 class="text-final">Hablar, sanamentes 2023©</h3>
             </div>
         </footer>
     </div>

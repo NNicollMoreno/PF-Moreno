@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/Logo.png">
     <title>Hablar Sanamentes - Tu guía para encontrar ayuda</title>
+    <!-- SEO -->
     <meta name="description" content="Hablar Sanamentes es un proyecto universitario en pro del bienestar estudiantil, de los estudiantes de Diseño Digital y Multimedia de la Univesidad Colegio Mayor de Cundinamarca en Bogotá, Colombia">
     <meta name="keywords" content="Psicología, universidad, bienestar, estudiantes, bogota, salud mental">
     <!-- Link Bootstrap CSS-->
@@ -13,7 +14,7 @@
     rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
     crossorigin="anonymous">
     <!-- Link CSS -->
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
 </head>
@@ -31,23 +32,23 @@
                       </button>
                       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0">
-                          <li class="nav-item custom-color">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" style="color: #8298D0;">Home</a>
                           </li>
-                          <li class="nav-item custom-color">
-                            <a class="nav-link active" href="pages/nosotros.html">Nosotros</a>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="pages/nosotros.html" style="color: #8298D0;">Nosotros</a>
                           </li>
-                          <li class="nav-item custom-color">
-                            <a class="nav-link active" href="pages/informate.html">Infórmate</a>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="pages/informate.html" style="color: #8298D0;">Infórmate</a>
                           </li>
-                          <li class="nav-item custom-color">
-                            <a class="nav-link active" href="pages/cuentanos.html">Cuéntanos</a>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="pages/cuentanos.html" style="color: #8298D0;">Cuéntanos</a>
                           </li>
-                          <li class="nav-item custom-color">
-                            <a class="nav-link active" href="pages/ayuda.html">Ayuda</a>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="pages/ayuda.html" style="color: #8298D0;">Ayuda</a>
                           </li>
-                          <li class="nav-item custom-color">
-                            <a class="nav-link active" href="pages/tienda.html">Tienda</a>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="pages/tienda.html" style="color: #8298D0;">Tienda</a>
                           </li>
                         </ul>
                       </div>
@@ -56,8 +57,8 @@
             </div>
         </header>
         <!-- Encabezado -->
-        <div class="row">
-            <div class="col-xl-12 col-12 d-flex justify-content-center bg_principal">
+        <div class="row bg_principal">
+            <div class="col-xl-12 col-12 d-flex justify-content-center">
                 <h1>Bienvenidos a</h1>
             </div>
             <div class="col-xl-12 col-12 d-flex justify-content-center">
@@ -67,17 +68,56 @@
         <!-- Buscador -->
         <form class="form-principal">
           <div class="d-flex justify-content-center align-items-center">
-            <input type="text" class="form-control form-control-sm w-25 p-2" id="Input" aria-describedby="emailHelp"
+            <input type="text" class="form-control form-control-sm w-25 p-2 buscador" id="Input" aria-describedby="emailHelp"
             placeholder="Escribe aquí el tema del que quieras saber">
           </div>
           <div class="d-flex justify-content-center align-items-center">
-            <button class="btn btn-primary">Buscar</button>
+            <button class="btn btn-primary boton-buscar">Buscar</button>
           </div>
         </form>
         <!-- Footer -->
         <footer class="row bg-footer">
-            <div class="col-xl-12 col-12 d-flex justify-content-center">
-                <h3>Hablar, sanamentes 2023©</h3>
+          <div class="info-footer">
+            <div class="row">
+              <div class="col">
+              <a class="navbar-brand" href="#"><img src="img/Logo.png" alt="Logo Hablar Sanamentes"></a>
+              <h6 class="Footer-sub">Somos un proyecto creado por tres estudiantes de Diseño Digital y Multimedia, diseñado para generar interés en la búsqueda de bienestar mental, emocional y también en la búsqueda de ayuda profesional.</h6>
+              <a class="logo_insta redes-img" href="https://www.instagram.com/hablar_sanamentes/"><img src="img/Logo_insta.png" alt="Logo instagram"></a>
+              <a class="logo_tiktok redes-img" href="https://www.tiktok.com/@hablar.sanamentes"><img src="img/Logo_tiktok.png" alt="Logo tik tok"></a>
+              </div>
+              <div class="col footer-vent">
+              <h5>El proyecto</h5>
+              <ul>
+                <li class="nav-footer">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-footer">
+                  <a class="nav-link active" href="pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-footer">
+                  <a class="nav-link active" href="pages/informate.html">Infórmate</a>
+                </li>
+                <li class="nav-footer">
+                  <a class="nav-link active" href="pages/cuentanos.html">Cuéntanos</a>
+                </li>
+                <li class="nav-footer">
+                  <a class="nav-link active" href="pages/ayuda.html">Ayuda</a>
+                </li>
+                <li class="nav-footer">
+                  <a class="nav-link active" href="pages/tienda.html">Tienda</a>
+                </li>
+              </ul>
+              </div>
+              <div class="col">
+                <h5>Contacto</h5>
+                <h6 class="foo-datos">Dirección: Carrera 70a # 7a-20, Bogotá D.C, Colombia</h6>
+                <h6 class="foo-datos">Télefono: +57 315 456 12 86</h6>
+                <h6 class="foo-datos">Correo: Hablarsanamentes@gmail.com</h6>
+              </div>
+            </div>
+          </div>
+            <div class="col-xl-12 col-12 d-flex justify-content-center Final-footer">
+                <h3 class="text-final">Hablar, sanamentes 2023©</h3>
             </div>
         </footer>
     </div>

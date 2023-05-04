@@ -1,3 +1,139 @@
-.custom-color {
-    color: red;
+@import "base";
+@import "footer";
+@import "cuentanos";
+@import "ayuda";
+@import "tienda";
+@import "informate";
+
+@keyframes transformacion{
+    25%{transform: translateY(-10px);}
+    50%{transform: translateY(25px);}
+}
+$font-Prin: Montserrat semibold;
+@mixin text-sec{
+    font-size: 24px;
+    color: #353853;
+}
+h1{
+    font-family: $font-Prin;
+    color: #6E78C8;
+    font-size: 100px;
   }
+.nav-item{
+    font-size: 20px;
+    font-family: $font-Prin;
+    padding-bottom: 3px;
+    &:hover{text-decoration: 4px underline;
+    color: #8298D0;
+    }
+}
+p{
+    font-family: Montserrat medium;
+    @include text-sec;
+}
+.navbar-brand{
+    animation-name: transformacion;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+@media screen and (max-width:768px){
+    h1{font-size: 50px;
+    text-align: center;}
+    .bg_principal{
+        padding: 60px;
+    }
+    .w-25{
+        width: 100%!important;
+    }
+    footer{
+        padding-top: 85px;
+    }
+    .info-footer{
+        text-align: center;
+    }
+    .redes-img{
+        padding-left: 0px;
+    }
+    .footer-vent{
+        display: none;
+    }
+    .cont-noso{
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    @keyframes transformacion-deprimidito{
+        25%{transform: translateY(-10px);}
+        50%{transform: translateY(10px);}
+    }
+    .deprimidito-img{
+        padding-left: 0px;
+        animation-name: transformacion-deprimidito;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes transformacion-ansiedad{
+        25%{transform: translateX(-2px);}
+        50%{transform: translateX(2px);}
+    }
+    .ansiedad-img{
+        animation-name: transformacion-ansiedad;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    .cont-ejer{
+        padding-left: 0;
+    }
+    .desc-noso{
+        padding-top: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .desc-ayuda{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .w-50{
+        width: 100%!important;
+    }
+    .desc-cuen{
+        padding-top: 20px;
+        text-align: center;
+    }
+    .cont-cuen{
+        padding-top: 10px;
+    }
+    .cuentanos-desc{
+        padding-left: 0px;
+    }
+    .Buscar-obj{
+        padding-left: 0px;
+        padding-bottom: 10px;
+    }
+    .cont-group{
+        padding-top: 0px;
+    }
+    .title-prod{
+        font-size: 50px;
+        padding-left: 0px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .cuenta-place{
+        transform: translate(0px,500px);
+    }
+    .cuentanos-desc{
+        transform: translate(0px,-500px);
+    }
+    body{
+        background-size: 15 0%;
+    }
+    .desc-info{
+        text-align: center;
+    }
+}

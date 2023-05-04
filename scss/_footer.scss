@@ -1,0 +1,34 @@
+@mixin text-sec{
+    color: white;
+}
+
+footer{
+    padding-top: 140px;
+    @include text-sec;
+}
+.info-footer{
+    background-color: #6E78C8;
+    padding-top: 20px;
+}
+.Final-footer{
+    background-color: #5a62a3;
+}
+.Footer-sub{
+    font-family: Montserrat regular;
+    padding-top: 10px;
+    font-size: 12px;
+}
+h5{
+    font-family: Montserrat semibold;
+}
+.footer-vent{
+    padding-left: 250px;
+}
+.foo-datos{
+    font-family: Montserrat regular;
+    padding-top: 10px;
+    font-size: 15px;
+}
+.redes-img{
+    padding-left: 70px;
+}

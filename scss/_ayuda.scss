@@ -1,0 +1,35 @@
+@mixin para-card{
+    background-color: #899FD3;
+    color: white;
+}
+.card-body{
+    @include para-card;
+    border-radius: 0px 0px 20px 20px;
+}
+.card-header{
+    @include para-card;
+}
+.boton-ayuda{
+    background-color: white;
+    color: #899FD3;
+}
+.cont-3{
+    padding-top: 50px;
+}
+.cont-4{
+    padding-top: 50px;
+}
+.desc-ayuda{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+@keyframes transformacion-ansiedad{
+    25%{transform: translateX(-16px);}
+    50%{transform: translateX(10px);}
+}
+.ansiedad-img{
+    animation-name: transformacion-ansiedad;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
